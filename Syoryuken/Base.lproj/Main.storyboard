@@ -23,15 +23,32 @@
                                     <fontDescription key="titleFontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="36"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kG0-a9-W90"/>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zMg-f1-Twr"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHK-Su-QNc">
+                                <rect key="frame" x="153" y="355" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="attack1" translatesAutoresizingMaskIntoConstraints="NO" id="8uz-w1-i6F">
+                                <rect key="frame" x="132" y="348" width="150" height="200"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="8uz-w1-i6F" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2XV-4N-DPJ"/>
                             <constraint firstItem="6s0-De-Tcg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3h3-4T-bmK"/>
                             <constraint firstItem="6s0-De-Tcg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Iad-gs-9iH"/>
+                            <constraint firstItem="8uz-w1-i6F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OtQ-Vo-MaC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6s0-De-Tcg" secondAttribute="bottom" constant="120" id="Vjg-bo-Mlu"/>
                             <constraint firstItem="6s0-De-Tcg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="526" id="c6Z-Eb-1rr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6s0-De-Tcg" secondAttribute="trailing" constant="20" id="i09-LK-Gzp"/>
@@ -39,7 +56,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="start" destination="6s0-De-Tcg" id="2kP-Gl-2br"/>
+                        <outlet property="syoryuken" destination="8uz-w1-i6F" id="92f-ta-IF2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -47,4 +64,7 @@
             <point key="canvasLocation" x="46.376811594202906" y="-2.6785714285714284"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="attack1" width="150" height="200"/>
+    </resources>
 </document>
